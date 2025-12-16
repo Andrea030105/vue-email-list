@@ -18,10 +18,22 @@
 
 <body>
     <div id="app">
-
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-6">
+                    <div class="mt-5">
+                        <ul class="list-group">
+                            <li class="list-group-item active" aria-current="true">Email List</li>
+                            <li v-for="(item) in emailArray" class="list-group-item">{{item}}</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
 
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
 
     <script text="text/javascript" src="./js/script.js"></script>
